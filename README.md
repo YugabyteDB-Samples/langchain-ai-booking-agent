@@ -46,7 +46,7 @@
        --base_dir=/home/yugabyte/yb_data --background=false
    ```
 
-## Create a database
+## Adding data
 
 1. Copy SQL files to Docker container.
 
@@ -68,19 +68,7 @@
        -c "\copy airbnb_listings from /home/sql/airbnb_listings_with_embeddings.csv with DELIMITER '^' CSV"
    ```
 
-# UI
-
-Install project dependencies and run the UI:
-
-```
-cd {project-root-directory}/langchain-agent-ui
-npm install
-npm run dev
-```
-
-By default, the UI will run on http://localhost:5173/ and proxies HTTP requests to http://localhost:3000 in `vite.config.js`.
-
-# Backend Services
+## Running Backend Services
 
 The backend consists of 2 Flask servers, one (`app.py`) for accepting chat messages from the UI to interact with an A.I. agent, and another (`api.py`) for communication betweeen the agent and the database.
 
@@ -112,3 +100,15 @@ python app.py
 python api.py
 * Running on http://127.0.0.1:8000
 ```
+
+## Running UI
+
+Install project dependencies and run the UI:
+
+```
+cd {project-root-directory}/langchain-agent-ui
+npm install
+npm run dev
+```
+
+By default, the UI will run on http://localhost:5173/ and proxies HTTP requests to http://localhost:3000 in `vite.config.js`.

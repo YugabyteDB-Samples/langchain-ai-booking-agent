@@ -1,0 +1,6 @@
+.env
+node_modules
+testenv
+__pycache__
+wiki_index
+python-server/agent-application-env/

@@ -1,4 +1,6 @@
 # LangChain AI Agent with YugabyteDB
+<img width="1325" alt="Screenshot 2024-04-11 at 5 00 27 PM" src="https://github.com/YugabyteDB-Samples/langchain-ai-booking-agent/assets/2041330/71ec2dee-19bc-4241-a677-fd8895be7f3a">
+
 
 ## Local YugabyteDB deployment
 
